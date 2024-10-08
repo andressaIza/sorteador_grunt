@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorteador</title>
+    <title>Coontador</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,24 +14,26 @@
   </head>
   <body>
     <main>
-      <h1>Sorteador</h1>
-      <form id="form-sorteador">
-        <div>
-          <label for="numero-maximo">Número máximo</label>
-          <input
-            type="number"
-            id="numero-maximo"
-            required
-            min="2"
-            value="2"
-            step="1"
-          />
-        </div>
-        <button type="submit">Sortear número</button>
-      </form>
-      <div class="resultado">
-        o número sorteado foi: <span id="resultado-valor"></span>
+      <h1>Contador</h1>
+      <div id="countdown">
+        <div class="countdown-item" id="days">&nbsp;</div>
+
+        <div class="countdown-item separador">D</div>
+
+        <div class="countdown-item" id="hours">&nbsp;</div>
+
+        <div class="countdown-item separador">H</div>
+
+        <div class="countdown-item" id="minutes">&nbsp;</div>
+
+        <div class="countdown-item separador">M</div>
+
+        <div class="countdown-item" id="seconds">&nbsp;</div>
+
+        <div class="countdown-item separador">S</div>
       </div>
+
+      <div class="fimcontador" id="content">&nbsp;</div>
     </main>
 
     <script src="@@ENDERECO_DO_JS"></script>
